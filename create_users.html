@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Cursus JavaScript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    </head>
+    
+    <body>
+        
+        <div class="container">
+            <h1>Cursus JavaScript <small>dag 2</small></h1>
+            <h2><small>Add/Remove Users</small></h2>
+
+            <form id="addUser">
+                <table class="table table-condensed" id="userTable">
+                    <tbody id="userBody">
+                        <tr id="userRow">
+                            <td><input type="text" name="txt" class="form-control" required placeholder="Your name"/></td>
+                            <td><select name="country" class="form-control" required>
+                                    <option value="" disabled selected>Select your country...</option>
+                                    <option value="nl">Netherlands</option>
+                                    <option value="in">India</option>
+                                    <option value="de">Germany</option>
+                                    <option value="fr">France</option>
+                                    <option value="us">United States</option>
+                                    <option value="ch">Switzerland</option>
+                                </select></td>
+                            <td><button id="addUserRow" class="btn btn-default">Toevoegen</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            
+            <hr />
+
+            <form id="main">
+                <table class="table table-condensed" id="dataTable">
+                    <tbody id="dataBody">
+                        <tr id="dataRow">
+                            <td><input type="checkbox" name="chk" value="1"/></td>
+                            <td><input type="text" name="txt" class="form-control" required placeholder="Your name"/></td>
+                            <td><select name="country" class="form-control" required>
+                            <option value="" disabled selected>Select your country...</option>
+                            <option value="nl">Netherlands</option>
+                            <option value="in">India</option>
+                            <option value="de">Germany</option>
+                            <option value="fr">France</option>
+                            <option value="us">United States</option>
+                            <option value="ch">Switzerland</option>
+                            </select></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            <button id="deleteRow" class="btn btn-danger">Verwijderen</button>
+
+            <button id="submitForm" class="btn btn-success">Opslaan in database</button>
+
+            <div id="resultaat"></div>
+        </div>
+        
+        <script src="js/script.js"></script>
+        
+    </body>
+    
+</html>
